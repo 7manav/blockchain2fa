@@ -1,0 +1,12 @@
+const deployments = await ethers.provider.getDeployments();
+console.log(deployments);
+const deployments = await ethers.provider.getDeployments();
+await Auth.isAuthenticated("0xCE546BC2E6Be6c4d3cACB977004Ff0D262E2298c");
+// Check authentication status again (should return true)
+await tx.wait();
+const tx = await Auth.authenticate();
+// Authenticate the deployer
+await Auth.isAuthenticated("0xCE546BC2E6Be6c4d3cACB977004Ff0D262E2298c");
+// Call the isAuthenticated function (should return false initially)
+const Auth = await ethers.getContractAt("Auth", contractAddress);
+const contractAddress = "0x7D2381A07e9C45eAd4e4491dEe401DFc0De16F49";
